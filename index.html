@@ -5,46 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toboolist</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Titolo e logo -->
-    <header>
-        <img src="img/Logo.png" alt="logo toboolist">
-        <h1>Toboolist</h1>
+    <header class="bg-color-white">
+        <img class="middle" src="img/Logo.png" alt="logo toboolist">
+        <h1 class="middle">Toboolist</h1>
     </header>
-    <!-- contenuto principale -->
-    <main>
+    <!-- piccola finestra di navigazione -->
+    <nav class="margin-bot">
         <!-- Add task add section -->
-        <section>
-            <input type="button" value="Add Task">
-            <input type="button" value="Add Section">
+        <section class="margin-left">
+            <input class="add-task" type="button" value="Add Task">
+            <input class="add-section" type="button" value="Add Section">
         </section>
+    </nav>
+    <!-- contenuto principale -->
+    <main class="bg-color-white">
+        
         <!-- list -->
-        <section>
+        <section class="margin-left">
             <!-- new task -->
             <div>
-                <ul>New Task
-                    <li>
-                        Quarterly Newsletter
-                    </li>
+                <ul><h3>New Task</h3>
+                    <li>Quarterly Newsletter <span class="editional">Editional</span></li>
                 </ul>
             </div>
             <!-- today -->
-            <div>
-                <ul>Today
-                    <li>Recuiting blog post</li>
-                    <li>Mobile app luanch</li>
-                    <li>Interview Jhon H.</li>
-                    <li>Summit update to mobile storefronts</li>
+            <div class="margin-top">
+                <ul><h3>Today</h3>
+                    <li>Recuiting blog post <span class="editional">Editional</span></li>
+                    <li>Mobile app luanch <span class="q1-goal">Q1 Goals</span></li>
+                    <li>Interview Jhon H. <span class="recruiting">Recruiting</span></li>
+                    <li>Summit update to mobile storefronts <span class="mobile">Mobile</span></li>
                 </ul>
             </div>
             <!-- upcoming -->
-            <div>
-                <ul>Upcoming
+            <div class="margin-top">
+                <ul><h3>Upcoming</h3>
                     <li>Schedule meeting with Alex</li>
-                    <li>Homepage refresh</li>
-                    <li>Onboard new Sales team members</li>
-                    <li>Review editorial calendar</li>
+                    <li>Homepage refresh <span class="website">Website</span></li>
+                    <li>Onboard new Sales team members <span class="sales">Sales</span></li>
+                    <li>Review editorial calendar <span class="editional">Editional</span></li>
                 </ul>
             </div>
 
