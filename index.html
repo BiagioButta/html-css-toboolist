@@ -1,63 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toboolist</title>
-    <link rel="stylesheet" href="style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Toboolist</title>
 </head>
 <body>
-    <!-- Titolo e logo -->
-    <header class="bg-color-white">
-        <img class="middle" src="img/Logo.png" alt="logo toboolist">
-        <h1 class="middle">Toboolist</h1>
+    <header>
+        <img src="img/Logo.png" alt="logo toboolist">
+        <h1>Toboolist</h1>
     </header>
-    <!-- piccola finestra di navigazione -->
-    <nav class="margin-bot">
-        <!-- Add task add section -->
-        <section class="margin-left">
-            <input class="add-task" type="button" value="Add Task">
-            <input class="add-section" type="button" value="Add Section">
-        </section>
-    </nav>
-    <!-- contenuto principale -->
-    <main class="bg-color-white">
-        
-        <!-- list -->
-        <section class="margin-left">
-            <!-- new task -->
-            <div>
-                <ul><h3>New Task</h3>
-                    <li>Quarterly Newsletter <span class="editional">Editional</span></li>
-                </ul>
-            </div>
-            <!-- today -->
-            <div class="margin-top">
-                <ul><h3>Today</h3>
-                    <li>Recuiting blog post <span class="editional">Editional</span></li>
-                    <li>Mobile app luanch <span class="q1-goal">Q1 Goals</span></li>
-                    <li>Interview Jhon H. <span class="recruiting">Recruiting</span></li>
-                    <li>Summit update to mobile storefronts <span class="mobile">Mobile</span></li>
-                </ul>
-            </div>
-            <!-- upcoming -->
-            <div class="margin-top">
-                <ul><h3>Upcoming</h3>
-                    <li>Schedule meeting with Alex</li>
-                    <li>Homepage refresh <span class="website">Website</span></li>
-                    <li>Onboard new Sales team members <span class="sales">Sales</span></li>
-                    <li>Review editorial calendar <span class="editional">Editional</span></li>
-                </ul>
-            </div>
 
+    <main>
+        <div class="white-container">
+            <input type="button" class="button-blue" value="Add task">
+            <input type="button" class="button-white" value="Add section">
             
-        </section>
+        </div>
+
+        <div class="container">
+
+            <section>
+                <span>&blacktriangledown;</span>
+                <span class="title">New Task</span>
+                <div class="icon-container" >
+                    <div class="icon">&#10003;</div>
+                    <span>Quarterly Newsletter  </span>
+                    <div class="ending" id="azure">Editorial</div>
+                </div>
+                
+            </section>
+
+            <section>
+                <span>&blacktriangledown;</span>
+                <span class="title">Today</span>
+                
+                <div class="icon-container">
+                    <div class="icon">&#10003;</div>
+                    <span>Recruiting blog post </span>
+                    <div class="ending" id="azure">Editorial</div>
+                </div>
+
+                <div class="icon-container">
+                    <div class="icon">&#10003;</div>
+                    <span>Mobile app launch  </span>
+                    <div class="ending" id="purple">Q1 goals</div>
+                </div>
+
+                <div class="icon-container">
+                    <div class="icon red">&#x2715;</div>
+                    <span>Interview Jhon  </span>
+                    <div class="ending" id="blue">Recruiting</div>
+                </div>
+
+                <div class="icon-container">
+                    <div class="icon">&#10003;</div>
+                    <span>Submit update to mobile sbhds </span>
+                    <div class="ending" id="orange"> Mobile</div>
+                </div>
+                
+            </section>
+
+            <section>
+                <span>&blacktriangledown;</span>
+                <span class="title">Upcoming</span>
+                <div class="icon-container">
+                    <div class="icon red">&#x2715;</div>
+                    <span>Schedule Meeting with Alex  </span>
+                    
+                </div>
+
+                <div class="icon-container">
+                    <div class="icon">&#10003;</div>
+                    <span>Homepage Refresh </span>
+                    <div class="ending" id="grey">Website</div>
+                </div>
+
+                <div class="icon-container">
+                    <div class="icon">&#10003;</div>
+                    <span>On board new sales team members </span>
+                    <div class="ending" id="green">Sales </div>
+                </div>
+
+                <div class="icon-container">
+                    <div class="icon">&#10003;</div>
+                    <span>Review editorial calendar </span>
+                    <div class="ending" id="azure">Editorial</div>
+                </div>
+                
+            </section>
+
+        </div>
+        
+
 
     </main>
+        
     
 </body>
 </html>
